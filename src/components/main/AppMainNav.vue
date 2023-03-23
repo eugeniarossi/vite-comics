@@ -1,6 +1,28 @@
 <script>
 export default {
     name: 'AppMainNav',
+    data() {
+        return {
+            mainNavLinks: [
+                {
+                    url: '../../img/buy-comics-digital-comics.png',
+                    name: 'digital comics'
+                }, {
+                    url: '../../img/buy-comics-merchandise.png',
+                    name: 'dc merchandise'
+                }, {
+                    url: '../../img/buy-comics-subscriptions.png',
+                    name: 'subscription'
+                }, {
+                    url: '../../img/buy-comics-shop-locator.png',
+                    name: 'comic shop locator'
+                }, {
+                    url: '../../img/buy-dc-power-visa.svg',
+                    name: 'dc power visa'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -9,34 +31,10 @@ export default {
         <div class="container">
             <nav>
                 <ul>
-                    <li>
+                    <li v-for="link in mainNavLinks">
                         <a href="#">
-                            <img src="../../img/buy-comics-digital-comics.png" alt="buy">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../../img/buy-comics-digital-comics.png" alt="buy">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../../img/buy-comics-digital-comics.png" alt="buy">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../../img/buy-comics-digital-comics.png" alt="buy">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../../img/buy-comics-digital-comics.png" alt="buy">
-                            link
+                            <img :src="link.url" alt="buy">
+                            <div>{{ link.name }}</div>
                         </a>
                     </li>
                 </ul>
@@ -59,6 +57,7 @@ export default {
             display: flex;
             gap: 4.5625rem;
             list-style: none;
+            text-transform: uppercase;
 
             li {
                 a {
