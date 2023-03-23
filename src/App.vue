@@ -22,11 +22,21 @@ export default {
 @use './styles/general.scss' as *;
 @use './styles/variables.scss' as *;
 
+.container {
+  @include container;
+}
+
 header {
-  @include bar(7.5rem);
+  height: 7.5rem;
+}
+
+main {
+  background-color: pink;
+  flex-grow: 1;
 }
 
 footer {
-  @include bar(7.5rem);
+  height: 6.875rem;
+  background-color: $background-color;
 }
 </style>

@@ -6,21 +6,29 @@ export default {
     name: 'AppFooter',
     data() {
         return {
-            
+
         }
     },
     components: {
-       AppLink,
-       AppFooterNav
+        AppLink,
+        AppFooterNav
     }
 }
 </script>
 
 <template>
-    <AppLink></AppLink>
-    <AppFooterNav></AppFooterNav>
+    <footer>
+        <div class="container">
+            <AppLink></AppLink>
+            <AppFooterNav></AppFooterNav>
+        </div>
+    </footer>
 </template>
 
 <style scoped lang="scss">
+@use '../../styles/general.scss' as *;
 
+.container {
+    @include bar;
+}
 </style>

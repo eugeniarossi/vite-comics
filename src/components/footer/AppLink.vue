@@ -11,8 +11,16 @@ export default {
 
 <template>
     <a href="#">
-        link
+        sign-up now!
     </a>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use '../../styles/variables.scss' as *;
+
+a {
+    color: #fff;
+    padding: 1.0625rem .9375rem;
+    border: .125rem solid $primary-color;
+}
+</style>

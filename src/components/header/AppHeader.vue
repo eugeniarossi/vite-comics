@@ -18,14 +18,17 @@ export default {
 
 <template>
     <header>
-        <AppLogo></AppLogo>
-        <AppHeaderNav></AppHeaderNav>
+        <div class="container">
+            <AppLogo></AppLogo>
+            <AppHeaderNav></AppHeaderNav>
+        </div>
     </header>
 </template>
 
 <style scoped lang="scss">
 @use '../../styles/general.scss' as *;
-@use '../../styles/variables.scss' as *;
 
-
+.container {
+    @include bar;
+}
 </style>

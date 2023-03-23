@@ -45,14 +45,24 @@ export default {
 <style scoped lang="scss">
 @use '../../styles/variables.scss' as *;
 
-ul {
+nav {
     display: flex;
-    gap: 2.125rem;
-    list-style: none;
+    align-items: center;
+    gap: 1.875rem;
 
-    li {
-        a {
-            text-decoration: none;
+    h2 {
+        color: $primary-color;
+    }
+
+    ul {
+        display: flex;
+        gap: 1.25rem;
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+            }
         }
     }
 }

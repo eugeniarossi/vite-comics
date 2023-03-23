@@ -49,7 +49,6 @@ ul {
         }
 
         a {
-            text-decoration: none;
             line-height: 7.5rem;
         }
     }
