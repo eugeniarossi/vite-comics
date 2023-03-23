@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
 #app {
   max-width: 75rem;
   margin: 0 auto;

@@ -1,7 +1,7 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/header/AppHeader.vue';
+import AppMain from './components/main/AppMain.vue';
+import AppFooter from './components/footer/AppFooter.vue';
 
 export default {
   components: {
@@ -18,4 +18,15 @@ export default {
   <AppFooter />
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+@use './styles/general.scss' as *;
+@use './styles/variables.scss' as *;
+
+header {
+  @include bar(7.5rem);
+}
+
+footer {
+  @include bar(7.5rem);
+}
+</style>

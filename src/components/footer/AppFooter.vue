@@ -1,21 +1,24 @@
 <script>
-import AppNavbar from './AppNavbar.vue';
+import AppLink from './AppLink.vue';
+import AppFooterNav from './AppFooterNav.vue';
 
 export default {
     name: 'AppFooter',
     data() {
         return {
-
+            
         }
     },
     components: {
-       AppNavbar
+       AppLink,
+       AppFooterNav
     }
 }
 </script>
 
 <template>
-   <AppNavbar></AppNavbar>
+    <AppLink></AppLink>
+    <AppFooterNav></AppFooterNav>
 </template>
 
 <style scoped lang="scss">
