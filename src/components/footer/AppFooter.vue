@@ -1,34 +1,27 @@
 <script>
-import AppLink from './AppLink.vue';
-import AppFooterNav from './AppFooterNav.vue';
+import AppFooterMenu from './AppFooterMenu.vue';
+import AppFooterBottom from './AppFooterBottom.vue';
 
 export default {
     name: 'AppFooter',
-    data() {
-        return {
-
-        }
-    },
     components: {
-        AppLink,
-        AppFooterNav
+        AppFooterMenu,
+        AppFooterBottom
     }
 }
 </script>
 
 <template>
     <footer>
-        <div class="container">
-            <AppLink></AppLink>
-            <AppFooterNav></AppFooterNav>
-        </div>
+        <AppFooterMenu></AppFooterMenu>
+        <AppFooterBottom></AppFooterBottom>
     </footer>
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/general.scss' as *;
-
-.container {
-    @include bar;
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 </style>

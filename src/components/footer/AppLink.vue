@@ -20,7 +20,7 @@ export default {
 
 a {
     color: #fff;
-    padding: 1.0625rem .9375rem;
+    padding: .625rem .8125rem;
     border: .125rem solid $primary-color;
 }
 </style>

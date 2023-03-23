@@ -29,14 +29,4 @@ export default {
 header {
   height: 7.5rem;
 }
-
-main {
-  background-color: pink;
-  flex-grow: 1;
-}
-
-footer {
-  height: 6.875rem;
-  background-color: $background-color;
-}
 </style>

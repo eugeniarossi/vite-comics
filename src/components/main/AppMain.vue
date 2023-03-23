@@ -1,22 +1,25 @@
 <script>
+import AppMainContent from './AppMainContent.vue';
+import AppMainNav from './AppMainNav.vue';
+
 export default {
     name: 'AppMain',
     data() {
         return {
 
         }
+    },
+    components: {
+        AppMainContent,
+        AppMainNav
     }
 }
 </script>
 
 <template>
     <main>
-        <div class="container">
-            <h2>main</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus perferendis laborum libero natus
-                aliquam, debitis possimus et distinctio, voluptas at. Cum, unde reiciendis. Neque, unde corporis? Earum,
-                doloremque! Neque.</p>
-        </div>
+        <AppMainContent></AppMainContent>
+        <AppMainNav></AppMainNav>
     </main>
 </template>
 
