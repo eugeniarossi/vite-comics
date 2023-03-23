@@ -3,7 +3,7 @@ export default {
     name: 'AppHeaderNav',
     data() {
         return {
-
+            navLinks: ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop']
         }
     }
 }
@@ -12,20 +12,8 @@ export default {
 <template>
     <nav>
         <ul>
-            <li>
-                <a href="#">character</a>
-            </li>
-            <li>
-                <a href="#">character</a>
-            </li>
-            <li>
-                <a href="#">character</a>
-            </li>
-            <li>
-                <a href="#">character</a>
-            </li>
-            <li>
-                <a href="#">character</a>
+            <li v-for="link in navLinks">
+                <a href="#">{{ link }}</a>
             </li>
         </ul>
     </nav>
