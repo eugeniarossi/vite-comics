@@ -3,7 +3,7 @@ export default {
     name: 'AppFooterNav',
     data() {
         return {
-
+            footerNavLinks: ['src/assets/img/footer-facebook.png', 'src/assets/img/footer-twitter.png', 'src/assets/img/footer-youtube.png', 'src/assets/img/footer-pinterest.png', 'src/assets/img/footer-periscope.png']
         }
     }
 }
@@ -13,29 +13,9 @@ export default {
     <nav>
         <h2>follow us</h2>
         <ul>
-            <li>
+            <li v-for="link in footerNavLinks">
                 <a href="#">
-                    <img src="../../img/footer-facebook.png" alt="facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../img/footer-facebook.png" alt="facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../img/footer-facebook.png" alt="facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../img/footer-facebook.png" alt="facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../img/footer-facebook.png" alt="facebook logo">
+                    <img :src="link" alt="social">
                 </a>
             </li>
         </ul>
@@ -43,7 +23,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/variables.scss' as *;
+@use 'src/assets/styles/variables.scss' as *;
 
 nav {
     display: flex;

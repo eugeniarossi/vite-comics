@@ -20,7 +20,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/variables.scss' as *;
+@use 'src/assets/styles/variables.scss' as *;
 
 ul {
     display: flex;

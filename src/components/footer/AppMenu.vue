@@ -109,6 +109,7 @@ export default {
     flex-grow: 1;
     gap: 2rem;
     color: #fff;
+    padding: 2.5rem 0rem;
 
     .menu-section {
         h3 {
@@ -116,7 +117,7 @@ export default {
         }
 
         ul {
-            margin-bottom: 1rem;
+            margin-bottom: .75rem;
             font-size: small;
             color: #959595;
         }

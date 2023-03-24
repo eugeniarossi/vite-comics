@@ -1,6 +1,6 @@
 <script>
-import AppMenu from '../main/AppMenu.vue';
-import AppLogoBig from '../main/AppLogoBig.vue';
+import AppMenu from './AppMenu.vue';
+import AppLogoBig from './AppLogoBig.vue';
 
 export default {
     name: 'AppFooterMenu',
@@ -21,18 +21,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/variables.scss' as *;
-
 #footer-menu {
-    background-image: url('../../img/footer-bg.jpg');
+    background-image: url('../../assets/img/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
 }
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 </style>

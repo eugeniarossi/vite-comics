@@ -11,7 +11,7 @@ export default {
 
 <style scoped lang="scss">
 #logo-big {
-    background-image: url('../../img/dc-logo-bg.png');
+    background-image: url('../../assets/img/dc-logo-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -19,8 +19,8 @@ export default {
 </template>
 
 <style lang="scss">
-@use './styles/general.scss' as *;
-@use './styles/variables.scss' as *;
+@use './assets/styles/main.scss' as *;
+@use 'src/assets/styles/general.scss' as *;
 
 .container {
   @include container;

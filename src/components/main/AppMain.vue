@@ -1,6 +1,6 @@
 <script>
-import AppMainContent from './AppMainContent.vue';
-import AppMainNav from './AppMainNav.vue';
+import MainContent from './MainContent.vue';
+import MainNav from './MainNav.vue';
 
 export default {
     name: 'AppMain',
@@ -10,16 +10,16 @@ export default {
         }
     },
     components: {
-        AppMainContent,
-        AppMainNav
+        MainContent,
+        MainNav
     }
 }
 </script>
 
 <template>
     <main>
-        <AppMainContent></AppMainContent>
-        <AppMainNav></AppMainNav>
+        <MainContent></MainContent>
+        <MainNav></MainNav>
     </main>
 </template>
 

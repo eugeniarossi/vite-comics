@@ -1,23 +1,23 @@
 <script>
 export default {
-    name: 'AppMainNav',
+    name: 'MainNav',
     data() {
         return {
             mainNavLinks: [
                 {
-                    url: '../../img/buy-comics-digital-comics.png',
+                    src: '../../assets/img/buy-comics-digital-comics.png',
                     name: 'digital comics'
                 }, {
-                    url: '../../img/buy-comics-merchandise.png',
+                    src: '../../assets/img/buy-comics-merchandise.png',
                     name: 'dc merchandise'
                 }, {
-                    url: '../../img/buy-comics-subscriptions.png',
+                    src: '../../assets/img/buy-comics-subscriptions.png',
                     name: 'subscription'
                 }, {
-                    url: '../../img/buy-comics-shop-locator.png',
+                    src: '../../assets/img/buy-comics-shop-locator.png',
                     name: 'comic shop locator'
                 }, {
-                    url: '../../img/buy-dc-power-visa.svg',
+                    src: '../../assets/img/buy-dc-power-visa.svg',
                     name: 'dc power visa'
                 }
             ]
@@ -33,7 +33,7 @@ export default {
                 <ul>
                     <li v-for="link in mainNavLinks">
                         <a href="#">
-                            <img :src="link.url" alt="buy">
+                            <img :src="link.src" alt="buy">
                             <div>{{ link.name }}</div>
                         </a>
                     </li>
@@ -44,7 +44,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/variables.scss' as *;
+@use 'src/assets/styles/variables.scss' as *;
 
 #main-nav {
     background-color: $primary-color;

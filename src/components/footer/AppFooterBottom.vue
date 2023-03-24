@@ -26,8 +26,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/variables.scss' as *;
-@use '../../styles/general.scss' as *;
+@use '../../assets/styles/variables.scss' as *;
+@use '../../assets/styles/general.scss' as *;
 
 #footer-bottom {
     height: 6.875rem;
