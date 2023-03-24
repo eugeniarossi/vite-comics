@@ -15,9 +15,10 @@ export default {
             <img :src="img" alt="{{ title }}">
         </div>
         <div class="title">
-            <h4>{{ title }}</h4>
+            <h5>{{ title }}</h5>
         </div>
     </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>
